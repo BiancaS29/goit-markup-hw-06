@@ -637,6 +637,24 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--medium-grey);
+    position: relative;
+}
+
+.modal-form__position svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 26px;
+    left: 12px;
+}
+
+.modal-form__position input {
+    padding-left: 35px;
+}
+
+.modal-form__position input:focus + svg,
+.modal-form__position input:hover + svg {
+    fill: var(--blue)
 }
 
 .modal-form__input {
@@ -683,6 +701,37 @@ body {
 
 .condition {
     color: var(--blue);
+}
+
+.modal-form__input[type='checkbox'] {
+    display: none; 
+}
+
+.modal-checkbox__position {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.modal-form__input[type='checkbox']:checked + .replace-checkbox {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.modal-checkbox__position svg {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -.1px;
+    left: 0px;
+    display: none;
+    fill: var(--white);
+}
+
+.modal-form__input[type='checkbox']:checked + .modal-checkbox__position svg {
+display: block;
 }
 
 .modal-form__btn {
