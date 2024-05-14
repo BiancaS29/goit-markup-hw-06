@@ -83,20 +83,16 @@ body {
     color: var(--blue);
 }
 
-.header__navigation a::after,
+.header__navigation a:hover::after,
 .header__navigation a:active::after {
     content: '';
-    height: 4px;
-    width: 0%;
-    border-radius: 2px;
+    height: 4px; 
+    width: 100%;
+    border-radius: 20px;
     position: absolute;
-    top: 44px;
+    top:40px;
     left: 0;
     background-color: var(--blue);
-    color: var(--blue);
-    transition-duration: 0.5s;
-    transition-property: width;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .header__navigation a:hover::after, 
@@ -269,7 +265,6 @@ body {
     margin-top: 30px;
     margin-bottom: 200px;
 }
-
 
 
 /*Stilizare About us Section*/
